@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "98f4499b-72db-4fbc-96eb-8225a30df297",
+		"name": "it-online-school",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23701377"
+	},
+	"item": [
+		{
+			"name": "Activity",
+			"item": [
+				{
+					"name": "GetActivity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    let data = pm.response.json().type;\r",
+									"    let type = pm.environment.get(\"type\");\r",
+									"    pm.expect(data).to.include(type);\r",
+									"   \r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "I'd like a pint of ale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.boredapi.com/api/activity?type=social&participants=2",
+							"protocol": "https",
+							"host": [
+								"www",
+								"boredapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"activity"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "social"
+								},
+								{
+									"key": "participants",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"pm.sendRequest(\"https://www.boredapi.com/api\", function (err, res) {",
+							"console.log(err, res);});",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Translation",
+			"item": [
+				{
+					"name": "Mandalorian",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    let data = pm.response.json().contents.translated;\r",
+									"    let answer = pm.environment.get(\"answer\");\r",
+									"    pm.variables.set(\"lang\", \"mandalorian\");\r",
+									"    pm.expect(data).to.include(answer);});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "{{GlobalText}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TranslateBaseUrl}}/{{lang}}",
+							"host": [
+								"{{TranslateBaseUrl}}"
+							],
+							"path": [
+								"{{lang}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Minion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    let data = pm.response.json().contents.translated;\r",
+									"    let answer = pm.environment.get(\"answer\");\r",
+									"    pm.variables.set(\"lang\", \"mandalorian\");\r",
+									"    pm.expect(data).to.include(answer);});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "{{GlobalText}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TranslateBaseUrl}}/{{lang}}",
+							"host": [
+								"{{TranslateBaseUrl}}"
+							],
+							"path": [
+								"{{lang}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Translate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    let data = pm.response.json().contents.translated;\r",
+									"    let answer = pm.environment.get(\"answer\");\r",
+									"    pm.expect(data).to.include(answer);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "{{GlobalText}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{TranslateBaseUrl}}/{{lang}}",
+							"host": [
+								"{{TranslateBaseUrl}}"
+							],
+							"path": [
+								"{{lang}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"pm.sendRequest(\"https://api.funtranslations.com/translate\", function (err, res) {",
+							"console.log(err, res);});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Animals",
+			"item": [
+				{
+					"name": "cat facts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response type = cat\", function () {\r",
+									"    pm.expect(pm.response.json()[0].type).to.include(\"cat\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response type = animalType\", function () {\r",
+									"     pm.expect(pm.response.json()[0].type).to.equal(\"cat\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Response amount: 2\", function () {\r",
+									"    pm.expect(pm.response.json([0])).to.length(\"2\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{animalBaseUrl}}/facts/random?animal_type=cat&amount=2",
+							"host": [
+								"{{animalBaseUrl}}"
+							],
+							"path": [
+								"facts",
+								"random"
+							],
+							"query": [
+								{
+									"key": "animal_type",
+									"value": "cat"
+								},
+								{
+									"key": "amount",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dog facts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    let data = pm.response.json()[0].type;\r",
+									"    let animalType = pm.environment.get(\"animalType\");\r",
+									"    pm.expect(data).to.include(animalType);\r",
+									"   \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response type = animalType\", function () {\r",
+									"     pm.expect(pm.response.json()[0].type).to.equal(pm.environment.get(\"animalType\"));\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Response amount: 3\", function () {\r",
+									"    pm.expect(pm.response.json([0])).to.length(pm.environment.get(\"amount\"));\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{animalBaseUrl}}/facts/random?animal_type={{animalType}}&amount={{amount}}",
+							"host": [
+								"{{animalBaseUrl}}"
+							],
+							"path": [
+								"facts",
+								"random"
+							],
+							"query": [
+								{
+									"key": "animal_type",
+									"value": "{{animalType}}"
+								},
+								{
+									"key": "amount",
+									"value": "{{amount}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hourse facts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    let data = pm.response.json()[0].type;\r",
+									"    let animalType = pm.environment.get(\"animalType\");\r",
+									"    pm.expect(data).to.include(animalType);\r",
+									"   \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response type = animalType\", function () {\r",
+									"     pm.expect(pm.response.json()[0].type).to.equal(pm.environment.get(\"animalType\"));\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Response amount: 3\", function () {\r",
+									"    pm.expect(pm.response.json([0])).to.length(pm.environment.get(\"amount\"));\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{animalBaseUrl}}/facts/random?animal_type={{animalType}}&amount={{amount}}",
+							"host": [
+								"{{animalBaseUrl}}"
+							],
+							"path": [
+								"facts",
+								"random"
+							],
+							"query": [
+								{
+									"key": "animal_type",
+									"value": "{{animalType}}"
+								},
+								{
+									"key": "amount",
+									"value": "{{amount}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.sendRequest(\"https://api.funtranslations.com/translate\", function (err, res) {",
+							"console.log(err, res);});",
+							"",
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"",
+					"pm.test(\"Status code is 200\", function () {",
+					"   pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);",
+					"});",
+					"  pm.expect(pm.response.responseTime).to.be.below(2000)"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TranslateBaseUrl",
+			"value": "https://api.funtranslations.com/translate",
+			"type": "string"
+		},
+		{
+			"key": "animalBaseUrl",
+			"value": "https://cat-fact.herokuapp.com",
+			"type": "string"
+		}
+	]
+}

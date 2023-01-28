@@ -1,0 +1,39 @@
+{
+	"id": "19573e32-42c8-4bde-813b-62e5b55094eb",
+	"name": "DEV",
+	"values": [
+		{
+			"key": "lang",
+			"value": "mandalorian",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "answer",
+			"value": "Ni'd guuror a pint be gal",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "type",
+			"value": "social",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "animalType",
+			"value": "dog",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "amount",
+			"value": "2",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-01-28T14:46:13.131Z",
+	"_postman_exported_using": "Postman/10.8.11-230125-1159"
+}
