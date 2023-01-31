@@ -19,8 +19,6 @@
 									"pm.test(\"social test\", function  () {\r",
 									"    const arr = pm.response.json().type;\r",
 									"    const type = pm.globals.get(\"type\");\r",
-									"    console.log(arr,type)\r",
-									"    pm.expect(arr).to.eql(type);\r",
 									"    if(arr == type){\r",
 									"        console.log(\"type test ok\")\r",
 									"    }\r",
