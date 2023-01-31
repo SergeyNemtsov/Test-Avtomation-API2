@@ -1,0 +1,39 @@
+{
+	"id": "d8c80352-2f8a-4dd7-9e95-e81f39e170ff",
+	"name": "QA",
+	"values": [
+		{
+			"key": "lang",
+			"value": "minion",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "answer",
+			"value": "ka'd ko a pint mud ale",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "type",
+			"value": "social",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "animalType",
+			"value": "horse",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "amount",
+			"value": "3",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-01-31T11:37:58.670Z",
+	"_postman_exported_using": "Postman/10.9.1"
+}

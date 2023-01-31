@@ -1,0 +1,21 @@
+{
+	"id": "cdc8d79f-e182-4a22-882b-d412016e0bfc",
+	"values": [
+		{
+			"key": "text",
+			"value": "I'd like a pint of ale",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "type",
+			"value": "social",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2023-01-31T11:37:34.234Z",
+	"_postman_exported_using": "Postman/10.9.1"
+}
