@@ -1,0 +1,260 @@
+{
+	"id": "833d5c65-0182-4b66-be81-8379231676f1",
+	"name": "it-online-school",
+	"timestamp": "2023-01-31T15:46:17.731Z",
+	"collection_id": "25577673-7512a510-8671-4593-8681-b700dca62c70",
+	"folder_id": 0,
+	"environment_id": "25577673-41cfb1b1-7d59-42d7-94de-3162279d9ad2",
+	"totalPass": 23,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-01-31T15:46:15.959Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2ef85150-6746-4f50-9b09-3649b7579fd4",
+			"name": "Activity",
+			"url": "https://www.boredapi.com/api/activity?type=social&participants=2",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Json is not null ok": true,
+				"Status code  ok": true,
+				"Time 1000 ok": true,
+				"Test Headers ok": true,
+				"social test": true
+			},
+			"testPassFailCounts": {
+				"Json is not null ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code  ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Time 1000 ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Headers ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"social test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				138
+			],
+			"allTests": [
+				{
+					"Json is not null ok": true,
+					"Status code  ok": true,
+					"Time 1000 ok": true,
+					"Test Headers ok": true,
+					"social test": true
+				}
+			]
+		},
+		{
+			"id": "b06eea1f-04b3-4c7b-8ea0-c4a1306c07a3",
+			"name": "cat facts",
+			"url": "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=2",
+			"time": 161,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Json is not null ok": true,
+				"Status code  ok": true,
+				"Time 1000 ok": true,
+				"Test Headers ok": true,
+				"Response animalType ok": true,
+				"Response amount ok": true
+			},
+			"testPassFailCounts": {
+				"Json is not null ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code  ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Time 1000 ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Headers ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response animalType ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response amount ok": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Json is not null ok": true,
+					"Status code  ok": true,
+					"Time 1000 ok": true,
+					"Test Headers ok": true,
+					"Response animalType ok": true,
+					"Response amount ok": true
+				}
+			]
+		},
+		{
+			"id": "08d0c9da-a122-4ca0-a5d0-5796de7dc0a0",
+			"name": "dog facts",
+			"url": "https://cat-fact.herokuapp.com/facts/random?animal_type=dog&amount=2",
+			"time": 172,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Json is not null ok": true,
+				"Status code  ok": true,
+				"Time 1000 ok": true,
+				"Test Headers ok": true,
+				"Response animalType ok": true,
+				"Response amount ok": true
+			},
+			"testPassFailCounts": {
+				"Json is not null ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code  ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Time 1000 ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Headers ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response animalType ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response amount ok": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Json is not null ok": true,
+					"Status code  ok": true,
+					"Time 1000 ok": true,
+					"Test Headers ok": true,
+					"Response animalType ok": true,
+					"Response amount ok": true
+				}
+			]
+		},
+		{
+			"id": "4fda394c-6fae-4add-bb5e-04ae3e379ead",
+			"name": "horse facts",
+			"url": "https://cat-fact.herokuapp.com/facts/random?animal_type=dog&amount=2",
+			"time": 157,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Json is not null ok": true,
+				"Status code  ok": true,
+				"Time 1000 ok": true,
+				"Test Headers ok": true,
+				"Response animalType ok": true,
+				"Response amount ok": true
+			},
+			"testPassFailCounts": {
+				"Json is not null ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code  ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Time 1000 ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Headers ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response animalType ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response amount ok": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Json is not null ok": true,
+					"Status code  ok": true,
+					"Time 1000 ok": true,
+					"Test Headers ok": true,
+					"Response animalType ok": true,
+					"Response amount ok": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 628,
+	"collection": {
+		"requests": [
+			{
+				"id": "2ef85150-6746-4f50-9b09-3649b7579fd4",
+				"method": "GET"
+			},
+			{
+				"id": "b06eea1f-04b3-4c7b-8ea0-c4a1306c07a3",
+				"method": "GET"
+			},
+			{
+				"id": "08d0c9da-a122-4ca0-a5d0-5796de7dc0a0",
+				"method": "GET"
+			},
+			{
+				"id": "4fda394c-6fae-4add-bb5e-04ae3e379ead",
+				"method": "GET"
+			}
+		]
+	}
+}
